@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find the largest number from the number array</title>
+	</head>
+	<body>
+		<h1>Find the largest number from a number array</h1>
+
+		<script>
+			function largestNumber(array){
+				var	index;
+				var	max;
+
+				max = array[0];
+				index = 1;
+				while(index < array.length)
+				{
+					if (array[index] > max){
+						max = array[index];
+					}
+					index++;
+				}
+				return max;
+			}
+
+			var numbers = [3, 5, 7, 23, 1, 110, 30];
+			var largestNumber = largestNumber(numbers);
+			console.log("The largest Number is", largestNumber)
+		</script>
+	</body>
+</html>
